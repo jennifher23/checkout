@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Round">
+    <link rel= " stylesheet " href = "estilos.css" >
+    <title>Document</title>
+</head>
+<body>
+    <div class="main__container">
+        <h1 class="heading--1">Checkout</h1>
+        <main class="checkout__container">
+            <section class="product__container">
+                <div class="checkout__item checkout__item--1">
+                <figure class="img__conainer">
+                    <img src="img/mochila.webp" alt="a vintage bag" class="item__image">
+                </figure>
+              <div class="item__details">
+                    <p class="item__name">Backbag</p>
+                    <div class="item__cost">
+                        <span class="item__cost--new">$54.99</span>
+                        <span class="item__cost--old"><s>$94.99</s></span>
+                    </div>
+                        <div class="quantity__button">
+                            <button class="decrement">
+                             <span class="material-icons-round subtract">remove</span>
+                            </button>
+                            <label for="quantity"></label>
+                            <input type="number" name="quantity" id="quantity" min="1" max="50" value="1">
+                            <button class="increment">
+                                <span class="material-icons-round add">add</span>
+                            </button>
+                        </div>
+                </div>
+                </div>
+    
+                <div class="checkout__item checkout__item--2">
+                    <figure class="img__container">
+                        <img src="img/Cartera.jpg" alt="a levi shoe" class="item__image">
+                    </figure>
+                    <div class="item__details">
+                        <p class="item__name">Wallet</p>
+                        <div class="item__cost">
+                            <span class="item__cost--new">$54.99</span>
+                            <span class="item__cost--old"><s>$94.99</s></span>
+                        </div>
+                            <div class="quantity__button">
+                                <button class="decrement ">
+                                    <span class="material-icons-round subtract">remove</span>
+                                </button>
+                                <label for="quantity"></label>
+                                <input type="number" name="quantity" id="quantity" min="1" max="50" value="1">
+                                <button class="increment">
+                                    <span class="material-icons-round add">add</span>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                <div class="shipping">
+                    <p>Shipping </p>
+                    <p class="shipping__price">$19</p>
+                </div>
+                <div class="total">
+                    <p>Total </p>
+                    <p class="total__price">$148.98</p>
+                </div>
+            </section>
+            <section class="form__container">
+                <form aria-required="true" action="post" required>
+                    <section class="contact__information">
+                    <h2 class="heading--2">Contact infomation</h2>
+                        <div class="input__container">
+                            <label for="email">E-mail</label>
+                            <div class="input__container--icon">
+                                <span class="material-icons-round"> email </span>
+                                <input type="email" name="email" id="email" placeholder="Enter your email.." required tabindex="0">
+                            </div>
+                        </div>
+    
+                        <div class="input__container">
+                            <label for="phone">Phone</label>
+                            <div class="input__container--icon">
+                                <span class="material-icons-round"> phone </span>
+                                <input type="tel" name="phone" id="phone" placeholder="Enter your phone.." required>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="shipping__address">
+                    <h2 class="heading--2">Shipping Address</h2>
+                        <div class="input__container">
+                            <label for="firstlast">Full name</label>
+                            <div class="input__container--icon">
+                             <span class="material-icons-round"> account_circle </span>
+                                <input type="text" name="firstlast" id="firstlast" value="Your name" readonly required>
+                            </div>
+                        </div>
+    
+                    <div class="input__container">
+                        <label for="address">Address</label>
+                        <div class="input__container--icon">
+                            <span class="material-icons-round"> home </span>
+                            <input type="text" name="address" id="address" placeholder="Your Address.." required>
+                        </div>
+                    </div>
+    
+                    <div class="input__container">
+                        <label for="city">City</label>
+                        <div class="input__container--icon">
+                            <span class="material-icons-round"> location_city </span>
+                            <input type="text" name="city" id="city" placeholder="Your City.." required>
+                        </div>
+                    </div>
+    
+                    <div class="country__postc">
+                        <div class="input__container ">
+                            <label for="select-country">Country</label>
+                            <div class="input__container--icon select__wrapper">
+                                <span class="material-icons-round"> public </span>
+                                <select name="Country" id="select-country" required>
+                                    <option value="" disabled selected hidden>Your Country</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Perú">Perú</option>
+                                </select>
+                                <span class="material-icons-round expand__more"> expand_more</span>
+                            </div>
+                        </div>
+                        <div class="input__container">
+                            <label for="postal-code">Postal code</label>
+                            <div class="input__container--icon ">
+                            <span class="material-icons-round"> markunread_mailbox </span>
+                            <input type="text" name="postal-code" id="postal-code" placeholder="Your postal code.." required>
+                        </div>
+                    </div>
+                    </section>
+                    <label class="checkbox__container">
+                    <input aria-label="checkbox" type="checkbox" name="checkbox" required />
+                    <span class="checkbox__label"> Save this information for next time </span>
+                    </label>
+                    <button type="submit" class="submit">Continue</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>
+            created by <a>Jennifher</a>
+         <a>devChallenges.io</a>
+        </p>
+    </footer>  
+</body>
+</html>
+
+  
